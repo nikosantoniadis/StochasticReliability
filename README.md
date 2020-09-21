@@ -1,26 +1,6 @@
 # StochasticReliability
 
-# Preventing Overloading Incidents on Smart Grids: A Multiobjective Combinatorial Optimization Approach
-Results and the presentation of the paper *Preventing Overloading Incidents on Smart Grids: A Multiobjective Combinatorial Optimization Approach* that will be presented on the 3rd International Conference on Optimization and Learning (OLA2020), Cadiz, Spain, 17-19 February 2020. 
-
-## Presentation
-
-[OLA_Presentation_19_Feb_2020-Final.pdf](OLA_Presentation_19_Feb_2020-Final.pdf)
-
-The slides of the presentation on the 3rd International Conference on Optimization and Learning (OLA2020), Cadiz, Spain, 17-19 February 2020.
-
 ## File contents
-
-[scenarios.csv](scenarios.csv)
-
-Contains the information of the 216 scenarios we used in our experiments
-
-The layout is on the following form:
-* *Scenario*: scenario number
-* *ProdOv*: percentage of overloaded producers 
-* *ConsOv*: percentage of overloaded consumers 
-* *ProdCur*: percentage of curtailed producers
-* *ConsCur*: percentage of curtailed consumers
 
 [obj1.csv](obj1.csv)
 
