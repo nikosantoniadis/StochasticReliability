@@ -2,6 +2,8 @@
 
 ## File contents
 
+### Input files
+
 [Cabinets_public.csv](Cabinets_public.csv)
 
 Contains the data for the cabinets of the smart grid
@@ -62,17 +64,118 @@ SmartMeter,Timestamp,A+,A-,R+,R-,Overload,Curtailment
 * *Overload*: overload indicator (1 overloaded, 0 normal)
 * *Curtailment*: curtailment indicator (1 curtailed, 0 normal)
 
-[obj3.csv](obj3.csv)
+### Output files
 
-Contains the results of the third objective (percentage of changed fuses) of each scenario
+#### Stochastic results
 
-The layout of the (obj1.csv),(obj2.csv), and (obj3.csv) is on the following form:
+[FirstMethod-Output.csv](FirstMethod-Output.csv)
+
+Contains the first method results of each scenario
+
+The layout of the file is on the following form:
 
 * *Scenario*: scenario number
-* *Average*: the arithmetic mean of the experiments 
-* *CI-L*: Lower bound of the 99% confidence interval 
-* *CI-H*: Upper bound of the 99% confidence interval
+* *Experiment*: Instance number
+* *Deterministic_CPU_Time(s)*: CPU time for the deterministic part
+* *Solution_Number*: number of solution (1-5)
+* *Deterministic_obj1*: Smart meters serviced
+* *Deterministic_obj2*: Cabinet changes
+* *Deterministic_obj3*: Fuses changes
+* *UOI*: Unified Overload Index
+* *UOI_std*: Unified Overload Index standard deviation
+* *Error(%)*: Percentage of error
+* *LB*: Lower bound
+* *UB*: Upper bound
+* *N*: number of simulations
+* *R*: efficiency index
+* *SAOFI*: SAOFI index
+* *SAODI*: SAODI index
+* *CAODI*: CAODI index
+* *CBLSAOFI*: CBLSAOFI index
+* *CBLODI*: CBLODI index
+* *ASOFI*: ASOFI index
+* *ASODI*: ASODI index
+* *CPU_Time(ms): Total CPU time 
 
+[SecondMethod3dec-Output.csv](SecondMethod3dec-Output.csv)
+
+Contains the second method with 3 decimal places precision results of each scenario
+
+[SecondMethod4dec-Output.csv](SecondMethod4dec-Output.csv)
+
+Contains the second method with 4 decimal places precision results of each scenario
+
+The layout of the two above files is on the following form:
+
+* *Scenario*: scenario number
+* *Experiment*: Instance number
+* *Independent_run*: number of best independent run
+* *Solution*: number of solution (0-4)
+* *Initial_UOI* : Unified Overload Index of the input state
+* *Final_UOI*: Expected UOI
+* *UOI_std*: Unified Overload Index standard deviation
+* *Gap(%)*: Percentage of error
+* *LB*: Lower bound
+* *LB_std*: Lower bound standard deviation
+* *UB*: Upper bound
+* *UB_std*: Upper bound standard deviation
+* *SAOFI*: SAOFI index
+* *SAODI*: SAODI index
+* *CAODI*: CAODI index
+* *CBLSAOFI*: CBLSAOFI index
+* *CBLODI*: CBLODI index
+* *ASOFI*: ASOFI index
+* *ASODI*: ASODI index
+* *Actions*: number of fuses changes
+* *CPU_Time(ms): Total CPU time 
+
+[FirstMethod-ActionPlan.csv](FirstMethod-ActionPlan.csv)
+
+Contains the first method action plan of each scenario
+
+* *Scenario*: scenario number
+* *Experiment*: Instance number
+* *Solution_Number*: number of solution (1-5)
+* *obj1*: Smart meters serviced
+* *obj2*: Cabinet changes
+* *obj3*: Fuses changes
+* *load_init_(1-31)*: initial load on cable 1-31
+* *load_after_(1-31)*: load after applying the plan on cable 1-31
+* *reachable_(1-31)*: reachability index after applying the plan on cable 1-31 (1 reachable, 0 unreachable) 
+* *total_sm_(1-31)*: number of smart meters on cable 1-31
+* *overload_init_(1-31)*: overload index (1 overload, 0 normal) 
+* *curtailed_after_(1-31)*: curtailment index (1 curtailement applied, 0 no action taken)
+* *startFuse_init_(1-31)*: initial start fuse state (1 close, 0 open)
+* *startFuse_after_(1-31)*: start fuse state after applying the plan (1 close, 0 open)
+* *endFuse_init_(1-31)*: initial end fuse state (1 close, 0 open)
+* *endFuse_after_(1-31)*: end fuse state after applying the plan (1 close, 0 open)
+
+[SecondMethod3dec-ActionPlan.csv](SecondMethod3dec-ActionPlan.csv)
+
+Contains the second method with 3 decimal places precision action plan of each scenario
+
+[SecondMethod4dec-ActionPlan.csv](SecondMethod4dec-ActionPlan.csv)
+
+Contains the second method with 4 decimal places precision action plan of each scenario
+
+The layout of the two above files is on the following form:
+
+* *Scenario*: scenario number
+* *Experiment*: Instance number
+* *Solution_Number*: independent_run * 10 + number of solution (0-4)
+* *obj1*: Expected Unified Overload Index
+* *obj2*: Fuses changes
+* *obj3*: Initial UOI
+* *load_init_(1-31)*: initial load on cable 1-31
+* *load_after_(1-31)*: load after applying the plan on cable 1-31
+* *reachable_(1-31)*: reachability index after applying the plan on cable 1-31 (1 reachable, 0 unreachable) 
+* *total_sm_(1-31)*: number of smart meters on cable 1-31
+* *overload_init_(1-31)*: overload index (1 overload, 0 normal) 
+* *curtailed_after_(1-31)*: curtailment index (1 curtailement applied, 0 no action taken)
+* *startFuse_init_(1-31)*: initial start fuse state (1 close, 0 open)
+* *startFuse_after_(1-31)*: start fuse state after applying the plan (1 close, 0 open)
+* *endFuse_init_(1-31)*: initial end fuse state (1 close, 0 open)
+* *endFuse_after_(1-31)*: end fuse state after applying the plan (1 close, 0 open)
 
 
 ## Author
