@@ -54,7 +54,6 @@ The layout is on the following form:
 
 Contains the consumption data of the X scenario, Y instance
 
-SmartMeter,Timestamp,A+,A-,R+,R-,Overload,Curtailment
 * *SmartMeter*: smart meter number
 * *Timestamp*: Timestamp of the data
 * *A+*: Active energy produced
