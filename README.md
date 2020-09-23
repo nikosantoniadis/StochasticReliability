@@ -128,6 +128,8 @@ The layout of the two above files is on the following form:
 * *Actions*: number of fuses changes
 * *CPU_Time(ms): Total CPU time 
 
+#### Action plans
+
 [FirstMethod-ActionPlan.csv](FirstMethod-ActionPlan.csv)
 
 Contains the first method action plan of each scenario
