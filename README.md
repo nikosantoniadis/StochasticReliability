@@ -2,9 +2,18 @@
 
 ## File contents
 
-[obj1.csv](obj1.csv)
+[Cabinets_public.csv](Cabinets_public.csv)
 
-Contains the results of the first objective (percentage of connected users) of each scenario
+Contains the data for the cabinets of the smart grid
+
+The layout is on the following form:
+Cabinet,Latitude,Longitude,Substation
+
+* *Cabinet*: cabinet number
+* *Latitude*: latitude of the cabine<sup>*</sup>
+* *Longitude*: longitude of the cabinet<sup>*</sup>
+* *Substation*: substation indicator (1 substation, 0 normal cabinet)
+
 
 [obj2.csv](obj2.csv)
 
