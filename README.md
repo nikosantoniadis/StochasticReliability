@@ -56,10 +56,10 @@ Contains the consumption data of the X scenario, Y instance
 
 * *SmartMeter*: smart meter number
 * *Timestamp*: Timestamp of the data
-* *A+*: Active energy produced (kW)
-* *A-*: Active energy consumed (kW)
-* *R+*: Reactive energy produced (kVAr)
-* *A-*: Reactive energy consumed (kVAr)
+* *A+*: Active energy produced (kWh)
+* *A-*: Active energy consumed (kWh)
+* *R+*: Reactive energy produced (kVArh)
+* *A-*: Reactive energy consumed (kVArh)
 * *Overload*: overload indicator (1 overloaded, 0 normal)
 * *Curtailment*: curtailment indicator (1 curtailed, 0 normal)
 
