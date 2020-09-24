@@ -37,7 +37,7 @@ Contains the data for the cables of the smart grid
 The layout is on the following form:
 
 * *Cable*: cable number
-* *MaxLoad*: maximum load of the cable
+* *MaxLoad*: maximum ampacity of the cable (A)
 * *Start_Fuse*: start fuse number of the cable
 * *End_Fuse*: end fuse number of the cable
 
@@ -56,10 +56,10 @@ Contains the consumption data of the X scenario, Y instance
 
 * *SmartMeter*: smart meter number
 * *Timestamp*: Timestamp of the data
-* *A+*: Active energy produced
-* *A-*: Active energy consumed
-* *R+*: Reactive energy produced
-* *A-*: Reactive energy consumed
+* *A+*: Active energy produced (kW)
+* *A-*: Active energy consumed (kW)
+* *R+*: Reactive energy produced (kVAr)
+* *A-*: Reactive energy consumed (kVAr)
 * *Overload*: overload indicator (1 overloaded, 0 normal)
 * *Curtailment*: curtailment indicator (1 curtailed, 0 normal)
 
